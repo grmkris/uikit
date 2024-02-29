@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "postinstall": "pnpm -r inline-wasm | pnpm -r convert | pnpm -r generate | pnpm -r build"
+  },
   "devDependencies": {
     "@react-three/eslint-plugin": "^0.1.1",
     "@types/chai": "^4.3.10",
